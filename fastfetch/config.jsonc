@@ -1,0 +1,31 @@
+{
+  "logo": {
+    "source": "~/.config/fastfetch/dg.txt"
+  },
+    "modules": [
+        "break",
+        "break",
+        "break",
+          "title",
+          "separator",
+          "os",
+          "kernel",
+        {"type": "wm", "format": "{pretty-name}"},
+        "uptime",
+		"break",
+		"shell",
+        "terminal",
+    "packages",
+		"break",
+        "cpu",
+        {
+            "type": "gpu",
+            "key": "GPU"
+        },
+        "memory",
+        "swap",
+        "disk",
+        "break",
+        "colors"
+    ]
+}

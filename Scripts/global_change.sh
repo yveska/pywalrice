@@ -12,12 +12,12 @@ source ~/.cache/hellwal/variables.sh
 # Set Wallpapers
 swww img $wallpaper --transition-type wipe --transition-duration 1.0
 
-# Reload waybar
-pkill waybar && hyprctl dispatch exec waybar
-
 # Update Rofi
 cp ~/.cache/hellwal/rofi.rasi ~/.config/rofi/config.rasi
 
 # Pywalfox
 cp ~/.cache/hellwal/colors.json ~/.cache/wal/colors.json
 pywalfox update
+
+# Reload waybar
+pkill waybar && exec waybar

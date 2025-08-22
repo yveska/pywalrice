@@ -4,7 +4,7 @@
   /* General taskbar font, I like maple mono ^-^*/
   font-family: Maple Mono; 
   border-radius: 8;
-  font-size: 14px;
+  font-size: 13px;
   padding: 0px;
   background: transparent;
 }
@@ -30,12 +30,12 @@ window#waybar {
   margin: 6px;
   margin-right: 0px;
   padding: 2px 8px;
-  border-radius: 8px;
+  border-radius: 0px;
   color: @foreground;
 
   border-style: solid;
   border-color: alpha(@color1, 0.8);
-  border-width: 1px;
+  border-width: 0px;
 
   transition-duration: 120ms;
 }

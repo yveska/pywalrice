@@ -1,0 +1,75 @@
+@import '/home/yuki/.cache/hellwal/waybar-colors.css';
+
+* {
+  font-family: Maple Mono;
+  background: transparent;
+  color: #d8cab8;
+}
+
+#window {
+  color: alpha(@background, 0.85);
+  border-color: alpha(@color1, 1.0);
+  border-style: solid;
+  border-width: 1px;
+
+  /*Linear gradient background instead of standard background, because it makes cleaner border-radius cuts, issa bug :p*/
+  background-color: alpha(@background, 0.85);
+  border-radius: 14px;
+}
+#scroll {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #d8cab8;
+}
+#inner-box {
+  padding-top: 12px;
+}
+#entry {
+  border-style: none;
+  border-color: #d8cab8;
+  color: @background;
+  padding: 6px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12;
+
+  border-radius: 8px;
+}
+
+#entry:selected {
+  background-color: alpha(@color1, 0.9);
+  border-style: none;
+
+  color: #d8cab8;
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-color: alpha(@color7, 0.4);
+  color: @color7;
+  border-color: alpha(@color1, 0.1);
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+
+  font-style: normal;
+
+  border-radius: 8;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding: 12px;
+  margin: 8px;
+}
+#input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: alpha(@color1, 0.9);
+  font-style: normal;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}

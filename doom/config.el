@@ -42,6 +42,7 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Sync/Notes/org/")
 (setq org-roam-directory (file-truename "~/Sync/Notes/roam/"))
+(setq org-agenda-files '("~/Sync/Notes/f2025/school.org"))
 
 (use-package org-roam
   :ensure t
@@ -54,6 +55,12 @@
          ("C-c n i" . org-roam-node-insert)
          ("C-c n c" . org-roam-capture)
          ("C-c n g" . org-roam-graph)))
+
+(setq org-roam-capture-templates
+        '(("d" "default" plain "%?"
+         :target (file+head "${slug}.org"
+                            "#+title: ${title}\n")
+         :unnarrowed t)))
 
 (use-package! org-roam-ui
   :after org-roam

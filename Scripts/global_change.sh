@@ -1,7 +1,7 @@
 #! /sbin/bash
 
 # Set wallpaper directory
-Wallpapers_Folder=/home/yuki/Sync/Alice/Wallpapers/
+Wallpapers_Folder=/home/yuki/Sync/Wallpapers/
 
 # Generate colors from random wallpaper in folder
 hellwal -i $Wallpapers_Folder -r --neon-mode

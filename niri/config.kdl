@@ -136,6 +136,7 @@ binds {
     Mod+A { spawn "sh" "-c" "pgrep rofi > /dev/null 2>&1 && killall rofi || rofi -show drun"; }
     Mod+V { spawn "sh" "-c" "cliphist list | rofi -dmenu | cliphist decode | wl-copy"; }
     Mod+Shift+W { spawn "sh" "-c" "/home/yuki/Scripts/global_change.sh"; }
+    Mod+Ctrl+E { quit; }
 
     // Volume Controls
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
